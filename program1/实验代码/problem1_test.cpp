@@ -1,6 +1,6 @@
 #include <iostream>
 #include <chrono>
-#include <windows.h>
+// #include <windows.h>
 #include <string>
 #include <thread>
 using namespace std;
@@ -13,7 +13,7 @@ void pre(int n){
         for(int j=0;j<n;j++)
             b[i][j]=1.0*i/(j+1);
 }
-void cal1(int n){//Æ½·²Ëã·¨
+void cal1(int n){//Æ½ï¿½ï¿½ï¿½ã·¨
     double head,tail,freq,head1,tail1,timess=0;
     for(int i=0;i<n;i++){
         sum[i]=0.0;
@@ -21,7 +21,7 @@ void cal1(int n){//Æ½·²Ëã·¨
             sum[i]+=b[j][i]*a[j];
     }
 }
-void cal2(int n){//cacheÓÅ»¯
+void cal2(int n){//cacheï¿½Å»ï¿½
     double head,tail,freq,head1,tail1,timess=0;
     for(int i=0;i<n;i++)
         sum[i]=0.0;
